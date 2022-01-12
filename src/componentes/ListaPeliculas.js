@@ -1,30 +1,24 @@
+/* eslint-disable  */
 import React, { useState } from "react";
-import './ListaPeliculas.css';
-import { makeStyles } from '@mui/styles';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { FaStar } from 'react-icons/fa';
 
-//estilo de carta para Houm
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 700,
-        margin: 'auto',
-        marginTop:'40px'
-    }
-})
 
 const ListaPeliculas = (props) => {
 
-    //estilos y variables
-    const estilo = useStyles();
+
     const [peliculaDetallada, setPeliculaDetallada] = useState([]);
 
     //llamamos denuevo a la Api para solicitar la información detallada de la película o serie 
@@ -51,60 +45,108 @@ const ListaPeliculas = (props) => {
         setModalPelicula(!modalPelicula);
     }
 
+    //Agrega a favortios y cierra el modal
+    const funcionAgregarFavorito = () => {
+        props.agregarAFavoritos(peliculaDetallada);
+        abrirCerrarModalPelicula();
+    }
+
     //div del modal
     const bodyModalPelicula=(
-            <div className="peliculaseleccionada">
-                <Card className={estilo.root} sx={{ display: 'flex' }}>
 
-                    <Box sx={{ m: 2 }}>
-                        <img src={peliculaDetallada.Poster} alt="Poster not found." height="auto" width="auto" backgroundimage=""></img>
-                    </Box>
+                <Grid
+                    container
+                    spacing={15}
+                    direction="column"
+                    alignItems="center"
+                    justify="center"
+                    style={{ minHeight: '100vh', marginTop: '1vh' }}
+                >
 
-                    <Box sx={{ m: 2}}>
-                        <Typography gutterBottom variant="h6">
-                            Title: <Typography display="inline">{peliculaDetallada.Title}</Typography>
-                        </Typography>
+                <Grid item xs={3}>
+                    <Card sx={{ maxWidth: 345 }} sx={{ display: 'flex' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>             
+                            <CardMedia
+                                    component="img"
+                                    sx={{ m: 0.9 }}
+                                    height="auto"
+                                    image={peliculaDetallada.Poster}
+                                    alt="Poster not found."/>
+                            <Typography style={{  display: "flex", justifyContent: "center"}}>
+                                {[... Array(10)].map((star, i) => {
+                                    const dificultad_valor = i + 1;
+                                    return(
+                                        <FaStar className="star" color={dificultad_valor <= (peliculaDetallada.imdbRating ) ? "#FFC107" : "#808080"} size={25} />    
+                                    ) 
+                                })}
+                            </Typography>
+                            
+                            <CardActions style={{  display: "flex", justifyContent: "center"}}>
 
-                        <Typography variant="h6">
-                            Year: <Typography display="inline">{peliculaDetallada.Year}</Typography>            
-                        </Typography>
+                                <IconButton color="primary" aria-label="add to favorite" 
+                                component="span"
+                                onClick={() => funcionAgregarFavorito()}
+                                style={{display:'flex', justifyContent:'right' }}>                         
+                                    <FavoriteBorderIcon className="fav" color={"#ff5000"} size={30} />  
+                                </IconButton >
 
-                        <Typography variant="h6">
-                            Genre: <Typography display="inline">{peliculaDetallada.Genre}({peliculaDetallada.Rated})</Typography>           
-                        </Typography>
-
-                        <Typography variant="h6">
-                            Director: <Typography display="inline">{peliculaDetallada.Director}</Typography>   
-                        </Typography>
-
-                        <Typography variant="h6">
-                            Actors: <Typography display="inline">{peliculaDetallada.Actors}</Typography>  
-                        </Typography><br/>
-
-                        
-                        <Typography variant="body1">
-                            {peliculaDetallada.Plot}
-                        </Typography><br/>
-
-                        <Box textAlign='center'> 
-                            <Button nameClass="boton_naranja" 
-                            href={`https://www.youtube.com/results?search_query=${peliculaDetallada.Title} trailer`} 
-                            target="_blank"
-                            variant="contained" style={{ background: '#ff5000' }}>
-                                Watch Trailer
-                            </Button> 
+                                <Button nameClass="boton_naranja" 
+                                    href={`https://www.youtube.com/results?search_query=${peliculaDetallada.Title} trailer`} 
+                                    target="_blank"
+                                    variant="contained" style={{ background: '#ff5000'}}>
+                                        Watch Trailer
+                                </Button> 
+                            </CardActions>           
                         </Box>
 
-                    </Box>
-                    
-                    <Box>
-                    <IconButton variant="contained" onClick={() => {abrirCerrarModalPelicula()}}>
-                        <CloseIcon/>
-                    </IconButton>
-                    </Box>
-                </Card>
-            </div>
-            
+                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                            <CardActions sx={{ mt: -1.5}} style={{  display: "flex", justifyContent: "flex-end"}}>
+                                <IconButton variant="contained" onClick={() => {abrirCerrarModalPelicula()}}>
+                                    <CloseIcon/>
+                                </IconButton>
+                            </CardActions>   
+
+                            <CardContent sx={{ mt: -4, maxWidth: 345, maxHeight: 500, overflow: 'auto'}} >
+                                <Typography gutterBottom variant="h6">
+                                    Title: <Typography display="inline">{peliculaDetallada.Title}</Typography>
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Year: <Typography display="inline">{peliculaDetallada.Year}</Typography>            
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Genre: <Typography display="inline">{peliculaDetallada.Genre}({peliculaDetallada.Rated})</Typography>           
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Director: <Typography display="inline">{peliculaDetallada.Director}</Typography>   
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Actors: <Typography display="inline">{peliculaDetallada.Actors}</Typography>  
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Language: <Typography display="inline">{peliculaDetallada.Language}</Typography>  
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Country: <Typography display="inline">{peliculaDetallada.Country}</Typography>  
+                                </Typography>
+
+                                <Typography variant="h6">
+                                    Awars: <Typography display="inline">{peliculaDetallada.Awards}</Typography>  
+                                </Typography>
+                                <Typography variant="body1">
+                                    {peliculaDetallada.Plot}
+                                </Typography>
+                            </CardContent>
+                        </Box>
+                    </Card>
+                </Grid>      
+                </Grid>
+     
     )
 
     return (

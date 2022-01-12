@@ -38,8 +38,9 @@
   margin-right: 25px;
   margin-left: 25px;
   min-height: 72vh;
-  background-size: cover;
   background-image: url("./imagenes/background_oranges.png");
+  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   
 }
 
@@ -56,6 +57,7 @@
 }
 
 .peliculaseleccionada{
+  align-items: center;
   margin-left: 10px;
   margin-right: 10px;
 }
