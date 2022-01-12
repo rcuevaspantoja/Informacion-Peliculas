@@ -30,6 +30,7 @@ const busquedaPorTitulo= (props) => {
             <div className="div_filtro">
                 <Autocomplete
                     sx={{ width: 300}}
+                    style={{  display: "flex", justifyContent: "center"}}
                     options={opcionesFiltro}
                     inputValue={props.entradaComboBox}
                     disableClearable
