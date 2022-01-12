@@ -4,6 +4,7 @@ import Paginacion from './componentes/Paginacion.js'
 import Cabecera from './componentes/Cabecera';
 import React, { useState, useEffect } from "react";
 import ListaPeliculas from './componentes/ListaPeliculas';
+import ListaFavoritos from './componentes/ListaFavoritos';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 
@@ -55,7 +56,7 @@ function App() {
         <Typography variant="h1" className="titulo1" component="div" sx={{ flexGrow: 1 }}>Favorites</Typography>
         <div className="peliculas">
           <Grid container spacing={3}  alignItems="center">
-            {<ListaPeliculas peliculas={favoritos} agregarAFavoritos={agregarAFavoritos}/>}   
+            {<ListaFavoritos peliculas={favoritos}/>}   
           </Grid>   
         </div>      
       </div>   
