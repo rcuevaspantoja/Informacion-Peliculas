@@ -14,25 +14,29 @@ const busquedaPorTitulo= (props) => {
     return (
         <div className="form">
 
-            <img src={busqueda} alt="logo creado para la prueba" height="56" width="56"></img>
-
-            <TextField variant="outlined" 
-            values={props.value}
-            onChange={(event)=> props.setPaginacion(1)}
-            onInput={(event)=> props.setBusquedaPorTitulo(event.target.value)}
-            name="titulo" 
-            placeholder="Type to search..."/>
-
             <div>
+                <img src={busqueda} alt="logo creado para la prueba" height="30" width="30"></img>
+            </div>
+ 
+            <div>
+                <TextField variant="outlined" 
+                values={props.value}
+                onChange={(event)=> props.setPaginacion(1)}
+                onInput={(event)=> props.setBusquedaPorTitulo(event.target.value)}
+                name="titulo" 
+                placeholder="Type to search..."/>
+            </div>
+
+            <div className="div_filtro">
                 <Autocomplete
-                    sx={{ width: 300, marginLeft: 3 }}
+                    sx={{ width: 300}}
                     options={opcionesFiltro}
                     inputValue={props.entradaComboBox}
                     disableClearable
                     renderInput={(params) => <TextField {...params} label="Type Filter" />}
                     onChange={(event, newValue) => {
                         props.setFiltro(newValue.descripcion);
-                      }}
+                    }}
                 />
             </div>
 

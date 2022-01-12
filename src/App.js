@@ -31,7 +31,7 @@ function App() {
 
   useEffect(()=>{
     getpeliculas(busquedaPorTitulo);
-    console.log(filtro)
+    // eslint-disable-next-line
   }, [busquedaPorTitulo, paginacion, filtro]);
 
   return (

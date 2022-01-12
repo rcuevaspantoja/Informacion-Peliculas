@@ -5,8 +5,6 @@ import IconButton from '@mui/material/IconButton';
 
 const Paginacion = (props) => {
 
-    var emoji = require('node-emoji')
-
     return(
         <div style={{marginTop: "25px",marginBottom: "25px"}} >
 

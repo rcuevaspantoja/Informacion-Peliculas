@@ -60,7 +60,7 @@ const ListaPeliculas = (props) => {
                         <img src={peliculaDetallada.Poster} alt="Poster not found." height="auto" width="auto" backgroundimage=""></img>
                     </Box>
 
-                    <Box sx={{ m: 2 }}>
+                    <Box sx={{ m: 2}}>
                         <Typography gutterBottom variant="h6">
                             Title: <Typography display="inline">{peliculaDetallada.Title}</Typography>
                         </Typography>

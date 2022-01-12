@@ -13,14 +13,25 @@
   color: white;
 }
 
+/*Estilos de Búsqueda y Filtro*/
+
 .form{
   margin-top: 10px;
+}
+
+.div_filtro{
+  align-items: center;
+  float:left;
+  padding: 10px;
+  border: 3px;
 }
 
 .titulo1 {
   color: #ff5000;
   text-shadow: 0 0 2px black;
 }
+
+/*Estilos ListaPeliculas.js */
 
 .peliculasgrid{
   margin-top: 25px;
@@ -30,4 +41,21 @@
   background-size: cover;
   background-image: url("./imagenes/background_oranges.png");
   
+}
+
+.hide{
+  display: none;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.peliculas:hover + .hide{
+  display:block;
+  background: #ff5000;
+  color:white;
+  padding-bottom: 10px;
+}
+
+.peliculaseleccionada{
+  margin-left: 10px;
+  margin-right: 10px;
 }

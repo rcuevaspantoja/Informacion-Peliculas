@@ -11,22 +11,30 @@ const Cabecera=(props) => {
 
     var emoji = require('node-emoji')
 
+    //funcion para refrescar la página
+
+    const refrescarPagina = () =>{
+      window.location.reload(false)
+    }
+
     return(
         <div>
         <AppBar position="static" style={{ background: '#ff5000'}}>
-          <Toolbar style={{width: "100%"}}>
+          <Toolbar style={{width: "94%"}}>
             <IconButton
               size="large"
               edge="start"
               color="inherit"
               aria-label="menu"
-            >
+              onClick={refrescarPagina}>
+              <img src={logo} alt="logo creado para la prueba" height="56" width="56"></img>
             </IconButton>
             
-            <Typography variant="h2" component="div" sx={{ flexGrow: 1 }}>
-              <img src={logo} alt="logo creado para la prueba" height="56" width="56"></img>
+
+            <Typography variant="h2" sx={{ flexGrow: 1 }}> 
               Movies at Houm
             </Typography>
+
           </Toolbar>
         </AppBar>
 
@@ -38,7 +46,7 @@ const Cabecera=(props) => {
 
         <Typography variant="h3" className="titulo1" component="div" sx={{ flexGrow: 1 }}>
             Watched a movie or a serie at houm and want more info about it?
-        </Typography>   
+        </Typography><br/>   
         </div>
     );
 };
