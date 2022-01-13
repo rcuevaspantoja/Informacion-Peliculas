@@ -37,7 +37,7 @@ const Cabecera=(props) => {
 
         <br/>
         <Typography variant="h3" className="titulo1" component="div" sx={{ flexGrow: 1 }}>
-            Watched a movie or a serie at houm and want more info about it?
+            Watched a movie or a series at houm and want more info about it?
         </Typography><br/>   
         </div>
     );
