@@ -20,6 +20,8 @@ Junto con lo anterior se permite filtrar el contenido entre películas, series o
 Para el desarrollo total de este programa se ocuparon aproximadamente 2 días aproximadamente respecto a la hora en la que recibí el correo.
 Tiempo total esperado: 5 días.
 
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_tiempoestimado.png?raw=true)
+
 <br />
 
 # :bookmark_tabs: Tecnologías Utilizadas.
