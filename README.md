@@ -59,6 +59,12 @@ Para se empezó trabajando con un json estatico de  10 películas para poder des
 
 ![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo.png?raw=true)
 
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo2.png?raw=true)
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo3.png?raw=true)
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_peliculaSeleccionada.png?raw=true)
+
 <br />
 
 # :bookmark_tabs: Instalación.
