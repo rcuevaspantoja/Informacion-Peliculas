@@ -2,8 +2,12 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import busqueda from "../imagenes/icono_busqueda.png";
 import Autocomplete from '@mui/material/Autocomplete';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 const busquedaPorTitulo= (props) => {
+
+    var emoji = require('node-emoji')
 
     const opcionesFiltro = [
         { label: 'Movies + Series', descripcion:''},
@@ -25,6 +29,9 @@ const busquedaPorTitulo= (props) => {
                 onInput={(event)=> props.setBusquedaPorTitulo(event.target.value)}
                 name="titulo" 
                 placeholder="Type to search..."/>
+                <Typography sx={{ fontSize: 14 }}  align="center" color="text.secondary" gutterBottom>
+                    coded with love by <Link href="https://www.linkedin.com/in/rodolfo-cuevas-7407231b5/" underline="hover">@rcuevaspantoja</Link> {emoji.get('❤️')}
+                </Typography>
             </div>
 
             <div className="div_filtro">

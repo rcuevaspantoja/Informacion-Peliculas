@@ -64,7 +64,7 @@ const ListaPeliculas = (props) => {
                 >
 
                 <Grid item xs={3}>
-                    <Card sx={{ maxWidth: 345 }} sx={{ display: 'flex' }}>
+                    <Card sx={{ maxWidth: 345 }} sx={{ display: 'flex'}}>
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>             
                             <CardMedia
                                     component="img"
