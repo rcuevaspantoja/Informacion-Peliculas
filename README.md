@@ -1,7 +1,7 @@
 # Test Houm
 
 
-### Hola internet :earth_americas:, me llamo Rodolfo y soy Ingeniero Civil en informática de la Universidad del BioBío en Concepción, Chile.
+[LINK A LA VERSION DESPLEGADA DE LA PÁGINA](https://wonderful-shaw-5ec261.netlify.app/)
 
 
 ### Correo Electronico :leaves:
@@ -11,7 +11,7 @@
 # :bookmark_tabs: Introducción.
 
 Este proyecto satisface la solicitud de la prueba práctica de programación para el puesto de Frontend Developer. Esta incluye un frontend en React se conecta a la API de [OMDB (Open Movie Data Base)](http://www.omdbapi.com/) y permite realizar una búsqueda entre distintas películas o series para obtener información detallada de esta como su reparto, idioma, puntuacion IDBM, entre otras.
-Junto con lo anterior se permite filtrar el contenido entre películas, series o peliculas y seríes (por defecto) yguardar las películas mediante el botón de corazón y las muestra abajo en el apartado de favoritos. Todo esto siguiendo la paleta de colores y cumpliendo con los requerimientos entregados y detallados más adelante.
+Junto con lo anterior se permite filtrar el contenido entre películas, series o peliculas y seríes (por defecto) yguardar las películas mediante el botón de corazón y las muestra abajo en el apartado de favoritos. Todo esto siguiendo la paleta de colores y cumpliendo con los requerimientos entregados y detallados más adelante junto con capturas al final del trabajo realizado.
 
 <br />
 
@@ -19,6 +19,8 @@ Junto con lo anterior se permite filtrar el contenido entre películas, series o
 
 Para el desarrollo total de este programa se ocuparon aproximadamente 2 días aproximadamente respecto a la hora en la que recibí el correo.
 Tiempo total esperado: 5 días.
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_tiempoestimado.png?raw=true)
 
 <br />
 
@@ -55,12 +57,6 @@ Para se empezó trabajando con un json estatico de  10 películas para poder des
 
 <br />
 
-# :bookmark_tabs: Capturas.
-
-
-
-<br />
-
 # :bookmark_tabs: Instalación.
 
 Posterior a clonar el repositorio un "npm install" instalará todos los módulos necesarios para la correcta ejecución, luego el comando "npm start" iniciará la aplicación acorde a la última versión de React disponible al 12-01-2022
@@ -71,7 +67,17 @@ Posterior a clonar el repositorio un "npm install" instalará todos los módulos
 
 Lo consideré un proyecto divertido, para poder tener frescos los conocimientos de FrontEnd y poder permitirme aprender un poco más de lo que ya sabía. Será un fuerte elemento en mi portafolio para mostrar mis habilidades. Se agradece de antemano la buena comunicación y la buena onda en los correos a Daniela 👍 :) 
 
+# :bookmark_tabs: Capturas.
 
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo.png?raw=true)
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo2.png?raw=true)
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo3.png?raw=true)
+
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_peliculaSeleccionada.png?raw=true)
+
+<br />
 
 
 [Gmail]: mailto:rcuevaspantoja@gmail.com
