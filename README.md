@@ -57,7 +57,7 @@ Para se empezó trabajando con un json estatico de  10 películas para poder des
 
 # :bookmark_tabs: Capturas.
 
-
+![alt text](https://github.com/rcuevaspantoja/testhoum/blob/main/src/imagenes/Capturas/captura_todo.png?raw=true)
 
 <br />
 
