@@ -1,4 +1,4 @@
-# :bookmark_tabs: Test Houm
+# Test Houm
 
 
 ### Hola internet :earth_americas:, me llamo Rodolfo y soy Ingeniero Civil en informática de la Universidad del BioBío en Concepción, Chile.
@@ -33,17 +33,17 @@ Tiempo total esperado: 5 días.
 
 # :bookmark_tabs: Requerimientos.
 
- -[X] Usar una API pública que te permita obtener una lista de recursos y cada uno de estos recursos tenga variados atributos. Aquí la idea es utilizar una API lo suficientemente compleja para poder mostrar todo tu potencial visualizando información de los recursos en formato de hero cards.
- -[X] La aplicación desarrollada debe tener la paleta exacta de colores de Houm.
- -[X] La información de cada recurso se debe visualizar en hero cards(tarjeta con foto, texto y botón). Cómo organizas los hero cards es decisión tuya.
- -[X] Debes visualizar simultáneamente al menos 10 recursos.
- -[X] Debe tener suficientes recursos para ocupar algún tipo de paginación o infinite scroll.
- -[X] Debes implementar filtros de búsqueda que agreguen valor a la aplicación.
- -[X] La página debe ser completamente responsive.
- -[X] Puedes utilizar cualquier librería para componentes de diseño (Bootstrap, Material UI, Ant design, etc). Utiliza solo una de estas.
- -[X] Se aprecian las funcionalidades extras que muestren tu conocimiento y también se tendrán en consideración para la corrección.
- -[X] Debes desplegar tu página.
- -[X] El código debe tener calidad de producción.
+ - [x] Usar una API pública que te permita obtener una lista de recursos y cada uno de estos recursos tenga variados atributos. Aquí la idea es utilizar una API lo suficientemente compleja para poder mostrar todo tu potencial visualizando información de los recursos en formato de hero cards.
+ - [x] La aplicación desarrollada debe tener la paleta exacta de colores de Houm.
+ - [x] La información de cada recurso se debe visualizar en hero cards(tarjeta con foto, texto y botón). Cómo organizas los hero cards es decisión tuya.
+ - [x] Debes visualizar simultáneamente al menos 10 recursos.
+ - [x] Debe tener suficientes recursos para ocupar algún tipo de paginación o infinite scroll.
+ - [x] Debes implementar filtros de búsqueda que agreguen valor a la aplicación.
+ - [x] La página debe ser completamente responsive.
+ - [x] Puedes utilizar cualquier librería para componentes de diseño (Bootstrap, Material UI, Ant design, etc). Utiliza solo una de estas.
+ - [x] Se aprecian las funcionalidades extras que muestren tu conocimiento y también se tendrán en consideración para la corrección.
+ - [x] Debes desplegar tu página.
+ - [x] El código debe tener calidad de producción.
   
 
 <br />
@@ -55,6 +55,12 @@ Para se empezó trabajando con un json estatico de  10 películas para poder des
 
 <br />
 
+# :bookmark_tabs: Capturas.
+
+
+
+<br />
+
 # :bookmark_tabs: Instalación.
 
 Posterior a clonar el repositorio un "npm install" instalará todos los módulos necesarios para la correcta ejecución, luego el comando "npm start" iniciará la aplicación acorde a la última versión de React disponible al 12-01-2022
@@ -63,7 +69,7 @@ Posterior a clonar el repositorio un "npm install" instalará todos los módulos
 
 # :bookmark_tabs: Conclusión.
 
-Lo consideré un proyecto divertido, para poder tener frescos los conocimientos de FrontEnd y poder permitirme aprender un poco más de lo que ya sabía. Será un fuerte elemento en mi portafolio para mostrar mis habilidades. Se agradece de antemano la buena comunicación y la buena onda en los correos a Daniela :) 
+Lo consideré un proyecto divertido, para poder tener frescos los conocimientos de FrontEnd y poder permitirme aprender un poco más de lo que ya sabía. Será un fuerte elemento en mi portafolio para mostrar mis habilidades. Se agradece de antemano la buena comunicación y la buena onda en los correos a Daniela 👍 :) 
 
 
 
