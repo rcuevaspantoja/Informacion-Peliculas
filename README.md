@@ -33,17 +33,17 @@ Tiempo total esperado: 5 días.
 
 # :bookmark_tabs: Requerimientos.
 
- - Usar una API pública que te permita obtener una lista de recursos y cada uno de estos recursos tenga variados atributos. Aquí la idea es utilizar una API lo suficientemente compleja para poder mostrar todo tu potencial visualizando información de los recursos en formato de hero cards.
- - La aplicación desarrollada debe tener la paleta exacta de colores de Houm.
- - La información de cada recurso se debe visualizar en hero cards(tarjeta con foto, texto y botón). Cómo organizas los hero cards es decisión tuya.
- - Debes visualizar simultáneamente al menos 10 recursos.
- - Debe tener suficientes recursos para ocupar algún tipo de paginación o infinite scroll.
- - Debes implementar filtros de búsqueda que agreguen valor a la aplicación.
- - La página debe ser completamente responsive.
- - Puedes utilizar cualquier librería para componentes de diseño (Bootstrap, Material UI, Ant design, etc). Utiliza solo una de estas.
- - Se aprecian las funcionalidades extras que muestren tu conocimiento y también se tendrán en consideración para la corrección.
- - Debes desplegar tu página.
- - El código debe tener calidad de producción.
+ -[X] Usar una API pública que te permita obtener una lista de recursos y cada uno de estos recursos tenga variados atributos. Aquí la idea es utilizar una API lo suficientemente compleja para poder mostrar todo tu potencial visualizando información de los recursos en formato de hero cards.
+ -[X] La aplicación desarrollada debe tener la paleta exacta de colores de Houm.
+ -[X] La información de cada recurso se debe visualizar en hero cards(tarjeta con foto, texto y botón). Cómo organizas los hero cards es decisión tuya.
+ -[X] Debes visualizar simultáneamente al menos 10 recursos.
+ -[X] Debe tener suficientes recursos para ocupar algún tipo de paginación o infinite scroll.
+ -[X] Debes implementar filtros de búsqueda que agreguen valor a la aplicación.
+ -[X] La página debe ser completamente responsive.
+ -[X] Puedes utilizar cualquier librería para componentes de diseño (Bootstrap, Material UI, Ant design, etc). Utiliza solo una de estas.
+ -[X] Se aprecian las funcionalidades extras que muestren tu conocimiento y también se tendrán en consideración para la corrección.
+ -[X] Debes desplegar tu página.
+ -[X] El código debe tener calidad de producción.
   
 
 <br />
