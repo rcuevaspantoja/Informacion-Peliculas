@@ -57,11 +57,13 @@ Para se empezó trabajando con un json estatico de  10 películas para poder des
 
 <br />
 
+
 # :bookmark_tabs: Instalación.
 
 Posterior a clonar el repositorio un "npm install" instalará todos los módulos necesarios para la correcta ejecución, luego el comando "npm start" iniciará la aplicación acorde a la última versión de React disponible al 12-01-2022
 
 <br />
+
 
 # :bookmark_tabs: Conclusión.
 
