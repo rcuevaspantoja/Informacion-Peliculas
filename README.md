@@ -1,5 +1,5 @@
 # Test para FrontEnd Dev con consumo de API
-
+Primer proyecto en React, faltó gestionar mejor las carpetas. Utilizar mas estilos en CSS y en si modular todo de mejor manera.
 
 [LINK A LA VERSION DESPLEGADA DE LA PÁGINA](https://naughty-kowalevski-ae30cf.netlify.app/)
 
