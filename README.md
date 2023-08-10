@@ -1,5 +1,11 @@
+# Notas para mi
+ - Mejorar la organización al momento de crear el proyecto
+ - Faltó modular más, hacer más separaciones y no juntar tanto código en un solo archivo
+ - Los estilos los pude haber serparado todos en un archivo de estilos propio
+ - La solicitud a la API igual pudo haber sido un archivo propio 
+
 # Test para FrontEnd Dev con consumo de API
-Primer proyecto en React, faltó gestionar mejor las carpetas. Utilizar mas estilos en CSS y en si modular todo de mejor manera.
+
 
 [LINK A LA VERSION DESPLEGADA DE LA PÁGINA](https://naughty-kowalevski-ae30cf.netlify.app/)
 
